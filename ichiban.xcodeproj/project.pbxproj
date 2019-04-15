@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE5CC223226503DC00EF6F30 /* PersonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE5CC222226503DB00EF6F30 /* PersonCell.xib */; };
 		CE5CC2252265040700EF6F30 /* PersonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC2242265040700EF6F30 /* PersonCell.swift */; };
 		CE5CC2272265044700EF6F30 /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC2262265044700EF6F30 /* PersonModel.swift */; };
 		CE5CC229226504F700EF6F30 /* PersonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5CC228226504F700EF6F30 /* PersonViewController.swift */; };
@@ -18,7 +17,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE5CC222226503DB00EF6F30 /* PersonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PersonCell.xib; sourceTree = "<group>"; };
 		CE5CC2242265040700EF6F30 /* PersonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonCell.swift; sourceTree = "<group>"; };
 		CE5CC2262265044700EF6F30 /* PersonModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		CE5CC228226504F700EF6F30 /* PersonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonViewController.swift; sourceTree = "<group>"; };
@@ -65,7 +63,6 @@
 				CE5CC2242265040700EF6F30 /* PersonCell.swift */,
 				FAB874F52264FFFB006046F9 /* Assets.xcassets */,
 				CE5CC2262265044700EF6F30 /* PersonModel.swift */,
-				CE5CC222226503DB00EF6F30 /* PersonCell.xib */,
 				FAB874F72264FFFB006046F9 /* LaunchScreen.storyboard */,
 				FAB874FA2264FFFB006046F9 /* Info.plist */,
 				CE5CC228226504F700EF6F30 /* PersonViewController.swift */,
@@ -132,7 +129,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB874F92264FFFB006046F9 /* LaunchScreen.storyboard in Resources */,
-				CE5CC223226503DC00EF6F30 /* PersonCell.xib in Resources */,
 				FAB874F62264FFFB006046F9 /* Assets.xcassets in Resources */,
 				FAB874F42264FFF9006046F9 /* Main.storyboard in Resources */,
 			);
@@ -297,13 +293,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DMFD3YYQW;
 				INFOPLIST_FILE = ichiban/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexlundquist.ichiban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -315,13 +312,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3DMFD3YYQW;
 				INFOPLIST_FILE = ichiban/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexlundquist.ichiban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

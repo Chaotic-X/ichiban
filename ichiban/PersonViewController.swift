@@ -8,24 +8,31 @@
 
 import UIKit
 
-class PersonViewController: UIViewController {
+class PersonViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate{
     
     
-    let data: [PersonModel] = [PersonModel(image: #imageLiteral(resourceName: "MockingSpongebob"), name: "Mocking Spongebob"),
-                             PersonModel(image: #imageLiteral(resourceName: "Drake"), name: "Drake"),
-                             PersonModel(image: #imageLiteral(resourceName: "DatBoi"), name: "Dat boi"),
-                             PersonModel(image: #imageLiteral(resourceName: "ExpandingBrain"), name: "Expanding Brain")]
+    var data: [PersonModel] = []
+    
+    func fillMock(){
+        data = [PersonModel(image: #imageLiteral(resourceName: "MockingSpongebob"), name: "Mocking Spongebob"),
+                PersonModel(image: #imageLiteral(resourceName: "Drake"), name: "Drake"),
+                PersonModel(image: #imageLiteral(resourceName: "DatBoi"), name: "Dat boi"),
+                PersonModel(image: #imageLiteral(resourceName: "ExpandingBrain"), name: "Expanding Brain")]
+    }
     
     @IBOutlet weak var collectionView: UICollectionView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        collectionView.dataSource = self as? UICollectionViewDataSource
-        collectionView.delegate = self as? UICollectionViewDelegate
-        collectionView.register(UINib.init(nibName: "PersonCell", bundle: nil), forCellWithReuseIdentifier: "PersonCell")
+        fillMock()
+        collectionView.reloadData()
+        
+        collectionView.dataSource = self
+        collectionView.delegate = self
+
     }
+    
     
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -36,6 +43,19 @@ class PersonViewController: UIViewController {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "PersonCell", for: indexPath) as! PersonCell
         cell.configure(with: data[indexPath.row])
         return cell
+    }
+    
+    private func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath){
+        
+        switch (indexPath.row)   {
+        case 0:
+            self.performSegue(withIdentifier: "person1", sender: self)
+        case 1:
+            self.performSegue(withIdentifier: "box1", sender: self)
+        default:
+            break
+        }
+        
     }
 
 }

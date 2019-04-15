@@ -1,17 +1,16 @@
 //
-//  MemeCell.swift
-//  MemeIQ
-//
-//  Created by Michael Rojas on 7/8/18.
-//  Copyright © 2018 Michael Rojas. All rights reserved.
-//
+// 
 
 import UIKit
 
 class PersonCell: UICollectionViewCell {
 
-    @IBOutlet var image: UIImageView!
-    @IBOutlet var name: UILabel!
+   
+  
+    @IBOutlet weak var image: UIImageView!
+    
+    
+    @IBOutlet weak var name: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
