@@ -12,6 +12,8 @@
 		FAB874F62264FFFB006046F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB874F52264FFFB006046F9 /* Assets.xcassets */; };
 		FAB874F92264FFFB006046F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB874F72264FFFB006046F9 /* LaunchScreen.storyboard */; };
 		FAB87501226501F0006046F9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87500226501F0006046F9 /* Person.swift */; };
+		FAB8750522650E8B006046F9 /* GroupCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB8750422650E8B006046F9 /* GroupCollectionViewController.swift */; };
+		FAB87507226512D2006046F9 /* PersonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87506226512D2006046F9 /* PersonController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FAB874F82264FFFB006046F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB874FA2264FFFB006046F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB87500226501F0006046F9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FAB8750422650E8B006046F9 /* GroupCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCollectionViewController.swift; sourceTree = "<group>"; };
+		FAB87506226512D2006046F9 /* PersonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				FAB874F72264FFFB006046F9 /* LaunchScreen.storyboard */,
 				FAB874FA2264FFFB006046F9 /* Info.plist */,
 				FAB87500226501F0006046F9 /* Person.swift */,
+				FAB8750422650E8B006046F9 /* GroupCollectionViewController.swift */,
+				FAB87506226512D2006046F9 /* PersonController.swift */,
 			);
 			path = ichiban;
 			sourceTree = "<group>";
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAB87507226512D2006046F9 /* PersonController.swift in Sources */,
+				FAB8750522650E8B006046F9 /* GroupCollectionViewController.swift in Sources */,
 				FAB87501226501F0006046F9 /* Person.swift in Sources */,
 				FAB874EF2264FFF9006046F9 /* AppDelegate.swift in Sources */,
 			);
