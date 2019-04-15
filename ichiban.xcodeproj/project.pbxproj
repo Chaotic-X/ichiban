@@ -12,6 +12,7 @@
 		FAB874F62264FFFB006046F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB874F52264FFFB006046F9 /* Assets.xcassets */; };
 		FAB874F92264FFFB006046F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB874F72264FFFB006046F9 /* LaunchScreen.storyboard */; };
 		FAB87501226501F0006046F9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87500226501F0006046F9 /* Person.swift */; };
+		FAB87503226504D8006046F9 /* PersonControllerswift.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB87502226504D8006046F9 /* PersonControllerswift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FAB874F82264FFFB006046F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAB874FA2264FFFB006046F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAB87500226501F0006046F9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		FAB87502226504D8006046F9 /* PersonControllerswift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonControllerswift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				FAB874F72264FFFB006046F9 /* LaunchScreen.storyboard */,
 				FAB874FA2264FFFB006046F9 /* Info.plist */,
 				FAB87500226501F0006046F9 /* Person.swift */,
+				FAB87502226504D8006046F9 /* PersonControllerswift.swift */,
 			);
 			path = ichiban;
 			sourceTree = "<group>";
@@ -96,6 +99,7 @@
 				TargetAttributes = {
 					FAB874EA2264FFF9006046F9 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -136,6 +140,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAB87501226501F0006046F9 /* Person.swift in Sources */,
+				FAB87503226504D8006046F9 /* PersonControllerswift.swift in Sources */,
 				FAB874EF2264FFF9006046F9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,7 +296,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexlundquist.ichiban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -309,7 +314,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.alexlundquist.ichiban;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
